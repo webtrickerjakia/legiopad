@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>IDOs_Main</title>
+
+    <!-- CSS only -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/nizarmah/calendar-javascript-lib/master/calendarorganizer.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/selectric.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <img src="img/scroll.png" id="button">
+
+    <main class="main-wrap">
+
+        <!--Header start-->
+        <header class="float-start w-100 fixed-top bg-alizarin-crimson header-wrap">
+            <div class="common-wrap clear">
+                <div class="float-start w-100 d-flex flex-row flex-wrap align-items-center header-inner">
+                    <div
+                        class="logo-wrap d-flex flex-row flex-wrap justify-content-between align-items-center position-relative zindex-1">
+                        <div class="float-none float-md-start float-lg-start main-logo">
+                            <a href="#"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="hamburger d-flex align-items-center">
+                            <div class="position-relative bg-transparent"></div>
+                        </div>
+                    </div>
+                    <div class="align-items-center justify-content-between nav-wrap">
+                        <nav class="main-nav">
+                            <ul class="d-block d-md-none d-lg-none ps-0 mb-0">
+                                <li class="list-unstyled mb-4 text-center tab-trigger-li tab-active"><a
+                                        href="IDOS_main.html"
+                                        class="fnt-space-grotesk fw-bold text-decoration-none text-white">IDOs</a></li>
+                                <li class="list-unstyled mb-4 text-center tab-trigger-li"><a href="staking.html"
+                                        class="fnt-space-grotesk fw-bold text-decoration-none text-white">Staking</a>
+                                </li>
+                                <li class="list-unstyled mb-4 text-center tab-trigger-li"><a href="farming.html"
+                                        class="fnt-space-grotesk fw-bold text-decoration-none text-white">Farming</a>
+                                </li>
+                                <li class="list-unstyled mb-4 text-center tab-trigger-li"><a href="claim.html"
+                                        class="fnt-space-grotesk fw-bold text-decoration-none text-white">Claim</a>
+                                </li>
+                                <li class="list-unstyled mb-4 text-center tab-trigger-li"><a href="#"
+                                        class="fnt-space-grotesk fw-bold text-decoration-none text-white">Calendar</a>
+                                </li>
+                            </ul>
+                            <ul class="ps-0 mb-0 d-none d-md-block d-lg-block">
+                                <li class="list-unstyled"><a href="#"
+                                        class="d-inline-block text-white text-decoration-none text-capitalize fnt-syne fw-bold display-4">Explore
+                                        IGOs</a></li>
+                            </ul>
+                        </nav>
+                        <div class="d-none d-md-flex d-lg-flex flex-row flex-wrap right-nav">
+                            <div class="drop-down">
+                                <ul class="float-start w-100 ps-0 mb-0">
+                                    <li class="list-unstyled position-relative">
+                                        <a href="#"
+                                            class="has-sub-nav position-relative text-capitalize fnt-space-grotesk fw-medium bg-transparent border text-decoration-none text-dark d-block text-center position-relative ">Buy
+                                            token</a>
+                                        <ul
+                                            class="dropdown-wrap position-absolute p-4 bg-white float-start w-100 rounded dropdown-nav">
+                                            <li class="mb-3"><a href="#"
+                                                    class="fnt-space-grotesk fw-medium  text-decoration-none text-dark d-block">Action</a>
+                                            </li>
+                                            <li class="mb-3"><a href="#"
+                                                    class="fnt-space-grotesk fw-medium  text-decoration-none text-dark d-block">Another
+                                                    action</a></li>
+                                            <li><a href="#"
+                                                    class="fnt-space-grotesk fw-medium  text-decoration-none text-dark d-block">Something
+                                                    else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ms-3 header-btn">
+                                <a href="#"
+                                    class="bg-black text-white text-decoration-none d-inline-block text-center connect position-relative">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Header end-->
+
+        <section class="float-start w-100 main-content-wrap position-relative">
+
+            <div class="float-start w-100 position-relative idos-wrap">
+                <div class="position-absolute top-0 start-0 d-none d-md-block d-lg-block tab-trigger">
+                    <ul class="ps-0 mb-0 mt-5 float-start w-100">
+                        <li class="list-unstyled float-start w-100 mb-4 tab-trigger-li tab-active">
+                            <a href="IDOS_main.html"
+                                class="float-start w-100 fnt-space-grotesk fw-bold fs-6 text-decoration-none text-white">
+                                <div class="float-start w-100 text-center">
+                                    <img src="img/rocket.png" alt="rocket">
+                                </div>
+                                <span class="d-block text-center">IGOs</span>
+                            </a>
+                        </li>
+                        <li class="list-unstyled float-start w-100 mb-4 tab-trigger-li">
+                            <a href="staking.html"
+                                class="float-start w-100 fnt-space-grotesk fw-bold fs-6 text-decoration-none text-white">
+                                <div class="float-start w-100 text-center">
+                                    <img src="img/staking2.png" alt="staking">
+                                </div>
+                                <span class="d-block text-center">Staking</span>
+                            </a>
+                        </li>
+                        <li class="list-unstyled float-start w-100 mb-4 tab-trigger-li">
+                            <a href="farming.html"
+                                class="float-start w-100 fnt-space-grotesk fw-bold fs-6 text-decoration-none text-white">
+                                <div class="float-start w-100 text-center">
+                                    <img src="img/faming.png" alt="staking">
+                                </div>
+                                <span class="d-block text-center">Farming</span>
+                            </a>
+                        </li>
+                        <li class="list-unstyled float-start w-100 mb-4 tab-trigger-li">
+                            <a href="claim.html"
+                                class="float-start w-100 fnt-space-grotesk fw-bold fs-6 text-decoration-none text-white">
+                                <div class="float-start w-100 text-center">
+                                    <img src="img/List.png" alt="staking">
+                                </div>
+                                <span class="d-block text-center">Claim</span>
+                            </a>
+                        </li>
+                        <li class="list-unstyled float-start w-100 mb-4 tab-trigger-li">
+                            <a href="calendar.html"
+                                class="float-start w-100 fnt-space-grotesk fw-bold fs-6 text-decoration-none text-white">
+                                <div class="float-start w-100 text-center">
+                                    <img src="img/calendar.png" alt="calendar">
+                                </div>
+                                <span class="d-block text-center">Calendar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="common-wrap clear">
+                    <div class="float-start w-100 idos-item-wrap">
+                        <div class="float-start w-100 idos-item" id="tab-1">
+                            <div class="float-start w-100 d-block d-sm-none d-md-none d-lg-none">
+                                <h1 class="fnt-syne fw-extra-bold text-uppercase mb-4">Explore<br> IGOS</h1>
+                            </div>
+                            <div class="float-start w-100 mb-4 idos-item-tab-trigger">
+                                <ul class="ps-0 mb-0 d-flex justify-content-start flex-row flex-wrap">
+                                    <li class="list-unstyled me-4 idos-active idos-item-tab-trigger-li"><a
+                                            href="#idos-tab-1"
+                                            class="text-decoration-none position-relative text-uppercase fnt-syne fw-bold fs-6 ps-4">OPEN
+                                            IGO</a></li>
+                                    <li class="list-unstyled me-4 idos-item-tab-trigger-li"><a href="#idos-tab-2"
+                                            class="text-decoration-none position-relative text-uppercase fnt-syne fw-bold fs-6 ps-4">Upcoming</a>
+                                    </li>
+                                    <li class="list-unstyled idos-item-tab-trigger-li"><a href="#idos-tab-3"
+                                            class="text-decoration-none position-relative text-uppercase fnt-syne fw-bold fs-6 ps-4">PAST
+                                            IGO</a></li>
+                                </ul>
+                            </div>
+                            <div class="float-start w-100 idos-tab-item-wrap">
+                                <div class="idos-tab-item" id="idos-tab-1">
+                                    <div class="float-start w-100 ps-2 pt-4 pb-2 pe-3 mt-2 bg-mine-shaft">
+                                        <div class="input-group">
+                                            <button class="btn bg-zeus" type="button">
+                                                <img src="img/search.png" alt="search">
+                                            </button>
+                                            <input type="search"
+                                                class="form-control bg-zeus border-0 fnt-space-grotesk fw-medium text-white"
+                                                placeholder="Search by name, token, address">
+                                        </div>
+                                        <div class="float-start w-100 d-none d-md-block d-lg-block">
+                                            <div class="row gx-0 py-4 mx-0">
+                                                <div class="col-4 ps-3">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-1-4">
+                                                        Project Name</h6>
+                                                </div>
+                                                <div class="col-1">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-1-4">
+                                                        Chain</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-1-4">
+                                                        END IN</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-1-4">
+                                                        Total Raise</h6>
+                                                </div>
+                                                <div class="col-3">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-1-4">
+                                                        Progress</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="float-start w-100 mt-4 mt-md-0 mt-lg-0">
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">KyberDyne
+                                                        </h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (GAC) = 0.59 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/kyber.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">0D 12H
+                                                    15M 58S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">100,000
+                                                    BUSD (85%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 70%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">70%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Thetan
+                                                            Arena</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (FSC) = 0.89 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/thetan.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">01D 08H
+                                                    44M 09S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">65,000
+                                                    BUSD (63%)</p>
+                                            </div>
+                                            <!-- <div class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6 class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">Progress</h6>
+                                                <img src="img/progress-44.jpg" alt="progress" class="float-start w-100">
+                                            </div>  -->
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 44%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">44%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Galaxy
+                                                            War</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (MTS) = 0.33 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/galaxy.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">02D 05H
+                                                    08M 56S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">110,000
+                                                    BUSD (100%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 31%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">31%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">KingdomX
+                                                        </h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (CTC) = 0.45 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/kyber.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">02D 14H
+                                                    09M 55S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">128,000
+                                                    BUSD (94%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 80%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">80%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Cyber
+                                                            City</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (GAC) = 0.59 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-lg-3">
+                                                <img src="img/galaxy.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">03D 22H
+                                                    32M 24S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">59,483
+                                                    BUSD (48%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 38%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">38%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="idos-tab-item" id="idos-tab-2">
+                                    <div class="float-start w-100 ps-2 pt-4 pb-2 pe-3 mt-2 bg-mine-shaft">
+                                        <div class="input-group">
+                                            <button class="btn bg-zeus" type="button">
+                                                <img src="img/search.png" alt="search">
+                                            </button>
+                                            <input type="search"
+                                                class="form-control bg-zeus border-0 fnt-space-grotesk fw-medium text-white"
+                                                placeholder="Search by name, token, address">
+                                        </div>
+                                        <div class="float-start w-100 d-none d-md-block d-lg-block">
+                                            <div class="row gx-0 py-4">
+                                                <div class="col-4 ps-3">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Project Name</h6>
+                                                </div>
+                                                <div class="col-1">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Chain</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        END IN</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Total Raise</h6>
+                                                </div>
+                                                <div class="col-3">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Progress</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="float-start w-100">
+                                        <div
+                                            class="row gx-0 p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0  mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">KyberDyne
+                                                        </h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (GAC) = 0.59 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/kyber.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">0D 12H
+                                                    15M 58S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">100,000
+                                                    BUSD (85%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 70%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">70%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0 p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Thetan
+                                                            Arena</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (FSC) = 0.89 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/thetan.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">01D 08H
+                                                    44M 09S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">65,000
+                                                    BUSD (63%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 44%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">44%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0 p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Galaxy
+                                                            War</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (MTS) = 0.33 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/galaxy.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">02D 05H
+                                                    08M 56S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">110,000
+                                                    BUSD (100%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 31%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">31%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0 p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">KingdomX
+                                                        </h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (CTC) = 0.45 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/kyber.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">02D 14H
+                                                    09M 55S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">128,000
+                                                    BUSD (94%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 80%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">80%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0 p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Cyber
+                                                            City</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (GAC) = 0.59 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/galaxy.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">03D 22H
+                                                    32M 24S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">59,483
+                                                    BUSD (48%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 38%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">38%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="float-start w-100 mt-5 d-flex justify-content-center pagination-wrap">
+                                        <ul class="ps-0 mb-0 d-flex">
+                                            <li class="list-unstyled mx-2"><a href="#" class="border d-block "><img
+                                                        src="img/left-chevron.png" alt=""></a></li>
+                                            <li class="list-unstyled mx-2"><a href="#"
+                                                    class="d-block text-decoration-none text-white fs-6 fnt-space-grotesk fw-normal border">1</a>
+                                            </li>
+                                            <li class="list-unstyled mx-2"><a href="#"
+                                                    class="d-block text-decoration-none text-white fs-6 fnt-space-grotesk fw-normal bg-rgba-concrete alizarin-crimson">2</a>
+                                            </li>
+                                            <li class="list-unstyled mx-2"><a href="#"
+                                                    class="d-block text-decoration-none text-white fs-6 fnt-space-grotesk fw-normal border">3</a>
+                                            </li>
+                                            <li class="list-unstyled mx-2"><a href="#"
+                                                    class="d-block text-decoration-none text-white fs-6 fnt-space-grotesk fw-normal border">4</a>
+                                            </li>
+                                            <li class="list-unstyled mx-2"><a href="#"
+                                                    class="d-block text-decoration-none text-white fs-6 fnt-space-grotesk fw-normal border">5</a>
+                                            </li>
+                                            <li class="list-unstyled mx-2"><a href="#" class="border d-block "><img
+                                                        src="img/right-chevron.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="idos-tab-item" id="idos-tab-3">
+                                    <div class="float-start w-100 ps-2 pt-4 pb-2 pe-3 mt-2 bg-mine-shaft">
+                                        <div class="input-group">
+                                            <button class="btn bg-zeus" type="button">
+                                                <img src="img/search.png" alt="search">
+                                            </button>
+                                            <input type="search"
+                                                class="form-control bg-zeus border-0 fnt-space-grotesk fw-medium text-white"
+                                                placeholder="Search by name, token, address">
+                                        </div>
+                                        <div class="float-start w-100 d-none d-md-block d-lg-block">
+                                            <div class="row gx-0 py-4 mx-0">
+                                                <div class="col-4 ps-3">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Project Name</h6>
+                                                </div>
+                                                <div class="col-1">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Chain</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        END IN</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Total Raise</h6>
+                                                </div>
+                                                <div class="col-3">
+                                                    <h6
+                                                        class="fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4">
+                                                        Progress</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="float-start w-100 mt-4 mt-md-0 mt-lg-0">
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">KyberDyne
+                                                        </h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (GAC) = 0.59 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/kyber.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">0D 12H
+                                                    15M 58S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">100,000
+                                                    BUSD (85%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 70%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">70%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Thetan
+                                                            Arena</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (FSC) = 0.89 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/thetan.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">01D 08H
+                                                    44M 09S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">65,000
+                                                    BUSD (63%)</p>
+                                            </div>
+                                            <!-- <div class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6 class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">Progress</h6>
+                                                <img src="img/progress-44.jpg" alt="progress" class="float-start w-100">
+                                            </div>  -->
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 44%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">44%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Galaxy
+                                                            War</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (MTS) = 0.33 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/galaxy.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">02D 05H
+                                                    08M 56S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">110,000
+                                                    BUSD (100%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 31%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">31%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">KingdomX
+                                                        </h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (CTC) = 0.45 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-md-3 pt-lg-3">
+                                                <img src="img/kyber.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">02D 14H
+                                                    09M 55S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">128,000
+                                                    BUSD (94%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 80%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">80%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="row gx-0  p-3 pb-md-4 px-md-0 py-lg-5 px-lg-0 mx-0 mb-4 mb-md-0 mb-lg-0 border-bottom report-item">
+                                            <div class="col-11 col-md-4 col-lg-4">
+                                                <div class="row ps-0 ps-md-3 ps-lg-3">
+                                                    <div class="col-3">
+                                                        <img src="img/table-img.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Cyber
+                                                            City</h6>
+                                                        <p
+                                                            class="fnt-space-grotesk fw-medium text-uppercase rgba-white letter-spacing-0-5">
+                                                            price (GAC) = 0.59 BUSD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pt-0 pt-lg-3">
+                                                <img src="img/galaxy.png" alt="" class="rounded-circle">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    END IN</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">03D 22H
+                                                    32M 24S</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-2 col-lg-2 py-3 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-0 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Total Raise</h6>
+                                                <p class="fnt-space-grotesk fw-medium fs-6 letter-spacing-0-5">59,483
+                                                    BUSD (48%)</p>
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-3 col-lg-3 py-3 px-5 px-md-0 px-lg-0 text-center text-md-start text-lg-start">
+                                                <h6
+                                                    class="d-block d-md-none d-lg-none fs-6 mb-2 fnt-space-grotesk fw-medium text-uppercase letter-spacing-1-4 rgba-white">
+                                                    Progress</h6>
+                                                <div class="progress-wrap position-relative">
+                                                    <div class="progress ">
+                                                        <div class="progress-bar progress-bar-success progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 38%">
+                                                        </div>
+                                                    </div>
+                                                    <span class="position-absolute">38%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div
+            class="float-start w-100 position-fixed top-0 start-0 vh-100 d-flex justify-content-center align-items-center connect-wallet-popup-wrap">
+            <div class="connect-wallet-popup w-100 position-relative">
+                <div class="position-absolute connect-wallet-close">
+                    <img src="svgs/x.svg" alt="close-icon">
+                </div>
+                <div class="float-start w-100 connect-wallet-popup-content">
+                    <h4 class="text-white">Connect Wallet</h4>
+                    <p>Please select a wallet to connect to this marketplace </p>
+                </div>
+                <div class="connect-wallet-item-wrap w-100 d-flex flex-row flex-wrap">
+                    <a href="#"
+                        class="connect-wallet-item w-100 d-flex align-items-center position-relative text-decoration-none">
+                        <div class="connect-wallet-item-icon text-center">
+                            <img src="svgs/Logo.svg" alt="logo">
+                        </div>
+                        <div class="connect-wallet-item-content">
+                            <h6 class="text-white">MetaMask</h6>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="connect-wallet-item w-100 d-flex align-items-center position-relative text-decoration-none">
+                        <div class="connect-wallet-item-icon text-center">
+                            <img src="svgs/logo-2.svg" alt="logo">
+                        </div>
+                        <div class="connect-wallet-item-content">
+                            <h6 class="text-white">Coinbase</h6>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="connect-wallet-item w-100 d-flex align-items-center position-relative text-decoration-none">
+                        <div class="connect-wallet-item-icon text-center">
+                            <img src="svgs/logo-3.svg" alt="logo">
+                        </div>
+                        <div class="connect-wallet-item-content">
+                            <h6 class="text-white">Trust Wallet</h6>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="connect-wallet-item w-100 d-flex align-items-center position-relative text-decoration-none">
+                        <div class="connect-wallet-item-icon text-center">
+                            <img src="svgs/logo-4.svg" alt="logo">
+                        </div>
+                        <div class="connect-wallet-item-content">
+                            <h6 class="text-white">WalletConnect</h6>
+                        </div>
+                    </a>
+                </div>
+                <p>By connecting your wallet, you agree to our <a href="#">Terms of Service</a> and our <a
+                        href="#">Privacy Policy.</a> </p>
+            </div>
+        </div>
+
+        <div class="float-start w-100 modal-event bg-zeus">
+
+            <div class="float-start w-100 ">
+                <div class="row p-4 mx-0">
+                    <div class="col-3">
+                        <img src="svgs/IGO-img.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-9">
+                        <h6 class="fnt-syne fw-normal fs-5 letter-spacing-2-3">Super Sidero</h6>
+                        <p class="fnt-space-grotesk fw-medium text-uppercase letter-spacing-0-5">price (SSC) = 0.13 BUSD
+                        </p>
+                    </div>
+                </div>
+                <div class="row gx-0  pb-4 px-3 px-md-0 px-lg-1 mx-0">
+                    <div class="col-7">
+                        <a href="#"
+                            class="w-100 rgba-white-light text-white text-decoration-none ps-4 d-inline-block connect position-relative cutom-btn">03
+                            Days Left</a>
+                    </div>
+                    <div class="col-5 d-flex justify-content-end pe-4">
+                        <img src="img/galaxy.png" alt="" class="rounded-circle">
+                    </div>
+                </div>
+                <div class="float-start w-100 mt-4 px-4">
+                    <div class="float-start w-100 d-flex justify-content-between">
+                        <p class="fw-medium rgba-white">Min Allocation</p>
+                        <dfn class="fw-medium fst-normal fs-6 text-white">0.89 BUSD</dfn>
+                    </div>
+                    <div class="float-start w-100 d-flex justify-content-between">
+                        <p class="fw-medium rgba-white">Max Allocation</p>
+                        <dfn class="fw-medium fst-normal fs-6 text-white">300.00 BUSD</dfn>
+                    </div>
+                    <div class="float-start w-100 d-flex justify-content-between">
+                        <p class="fw-medium rgba-white">Targeted Raise</p>
+                        <dfn class="fw-medium fst-normal fs-6 text-white">899,900 BUSD</dfn>
+                    </div>
+                    <div class="float-start w-100 d-flex justify-content-between">
+                        <p class="fw-medium rgba-white"> Access Type</p>
+                        <dfn class="fw-medium fst-normal fs-6 text-white">Public</dfn>
+                    </div>
+                    <div class="float-start w-100 d-flex justify-content-between">
+                        <p class="fw-medium rgba-white">Social</p>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector.png"></a>
+                            <a href="#"><img src="img/twitter icon.png"></a>
+                            <a href="#"><img src="img/discord.png"></a>
+                            <a href="#"><img src="img/Frame.png"></a>
+                            <a href="#"><img src="img/world.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer pt-4">
+            <div class="container">
+                <div class="row float-start w-100 align-items-center">
+                    <div class="col-md-6 my-2">
+                        <div class="nav justify-content-center justify-content-md-start"><a
+                                href="https://twitter.com/legiopad" rel="noreferrer" target="_blank"
+                                style="cursor: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                    </path>
+                                </svg></a><a href="https://t.me/MetaPlayVerified" rel="noreferrer" target="_blank"
+                                style="cursor: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                    </path>
+                                </svg></a><a href="https://t.me/MetaPlayAnn" rel="noreferrer" target="_blank"
+                                style="cursor: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z">
+                                    </path>
+                                </svg></a></div>
+                    </div>
+                    <div class="col-md-6 my-2 text-center text-md-end">
+                        <p>© 2022 copyright LegioPad all rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <!-- JS, and jQuery -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectric.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/nizarmah/calendar-javascript-lib/master/calendarorganizer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
